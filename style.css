@@ -15,6 +15,10 @@
   --accent-color: var(--primary-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0; /* Remove a margem padrão do body */
   background: var(--bg-color); /* Define a cor de fundo usando uma variável */
@@ -37,6 +41,22 @@ header {
   background: var(--primary-color);
   overflow: hidden; /* evita transbordamento da logo */
   gap: 1rem;
+}
+
+/* evita que a seção fique escondida pelo header fixo */
+#destaque-semana { scroll-margin-top: 4.5rem; }
+
+/* link textual no header, discreto e consistente com a paleta */
+.header-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+}
+.header-link:hover {
+  text-decoration: underline;
 }
 
 .logo {
@@ -213,6 +233,7 @@ main {
 .card-album {
   width: 100%;
   max-width: 600px; /* controla o tamanho máximo do card */
+  max-height: 580px;
   margin: 0 auto; /* centraliza cada card na sua coluna */
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -241,8 +262,7 @@ main {
   box-shadow: inset 0 -6px 18px rgba(0, 0, 0, 0.03);
 }
 
-.card-album h2,
-h4 {
+.card-album h2, h4 {
   margin: 0;
   font-size: 1.05rem;
   text-align: center;
@@ -257,8 +277,40 @@ h4 {
   color: var(--secondary-color);
   text-align: justify; /* aqui: justificado */
   hyphens: auto;
-  max-height: 6.5rem; /* limita altura para manter layout */
-  overflow: hidden;
+}
+
+.album-descricao {
+  max-height: 7.5rem;            /* ajuste conforme preferir */
+  overflow: auto;               /* permite scroll interno */
+  padding-right: 0.4rem;        /* espaço para a barra sem quebrar layout */
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  box-shadow: inset 0 -18px 20px -14px rgba(0,0,0,0.10); /* indicação sutil de conteúdo extra */
+  border-radius: 6px;
+  transition: box-shadow 220ms ease;
+  scrollbar-width: thin;                         /* Firefox */
+  scrollbar-color: rgba(255,255,255,0.12) transparent;
+}
+
+.album-descricao:hover {
+  box-shadow: inset 0 -28px 28px -18px rgba(0,0,0,0.12);
+}
+
+/* WebKit scrollbar (Chrome, Edge, Safari) */
+.album-descricao::-webkit-scrollbar {
+  width: 8px;
+}
+.album-descricao::-webkit-scrollbar-track {
+  background: transparent;
+}
+.album-descricao::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.12);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.album-descricao::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.18);
 }
 
 /* ícones de ação compactos na base */
@@ -313,6 +365,14 @@ h4 {
   }
 }
 
+
+
+.apresentacao-destaque{
+  text-align: center;
+  font-size: 1rem;
+  color: var(--tertiary-color);
+  margin-top: 2rem;
+}
 .destaque-semana {
   background-color: #1a1a1a; /* Fundo escuro para destacar */
   color: white;
@@ -333,8 +393,60 @@ h4 {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Brilho sutil */
   transform: rotate(3deg); /* Charminho visual (torta) */
+  cursor: pointer;
+  transition: transform 300ms ease, box-shadow 300ms ease;
 }
 
+.destaque-imagem:hover img {
+  transform: rotate(0deg) scale(1.03); /* Animação ao passar o mouse */
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+/* botão "Ouvir Agora" na recomendação da semana */
+.btn-destaque {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ffc800 0%, #be6600 100%);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 120ms ease;
+}
+
+/* posicionamento leve e destaque dentro do bloco de texto */
+.destaque-texto .btn-destaque {
+  margin-top: 0.8rem;
+}
+
+/* estados */
+.btn-destaque:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.22);
+  filter: brightness(0.98);
+}
+.btn-destaque:active {
+  transform: translateY(-1px) scale(0.99);
+}
+.btn-destaque:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(255, 200, 0, 0.14);
+  border-radius: 999px;
+}
+
+/* responsivo: reduz o padding em telas pequenas */
+@media (max-width: 480px) {
+  .btn-destaque {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
 /* Celular: Imagem em cima, texto embaixo */
 @media (max-width: 768px) {
   .destaque-conteudo {

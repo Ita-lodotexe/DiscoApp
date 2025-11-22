@@ -1,5 +1,12 @@
 let albuns = [];
 
+
+  const welcome = document.querySelector('.welcome-section');
+  const destaque = document.querySelector('.destaque-semana');
+  const banners = document.querySelector('.grid-banners');
+  const container = document.querySelector('.card-container');
+  const destaqueApresentacao = document.querySelector('.apresentacao-destaque');
+
 // carrega data.json e guarda em `albuns`
 async function carregarDados() {
   try {
@@ -11,22 +18,50 @@ async function carregarDados() {
 }
 
 
+async function albumAleatorio(){
+  try {
+    const allAlbuns = (albuns && albuns.length) ? albuns : await (await fetch('data.json')).json();
+    if (!allAlbuns || allAlbuns.length === 0) return;
+    const randomAlbum = allAlbuns[Math.floor(Math.random() * allAlbuns.length)];
+
+    if (!destaque) return;
+
+    // substitui o conteúdo atual pela recomendação aleatória
+    destaque.innerHTML = ''; 
+
+    const div = document.createElement('div');
+    div.className = 'destaque-conteudo';
+    div.innerHTML = `
+      <div class="destaque-texto">
+        <span>Recomendação da vez 🔥</span>
+        <h2>${escapeHtml(randomAlbum.titulo || '')} - ${escapeHtml(randomAlbum.banda || randomAlbum.artista || '')}</h2>
+        <p>${escapeHtml(randomAlbum.descricao || '')}</p>
+        <a href="${escapeHtml(randomAlbum.spotify || '#')}" class="btn-destaque" target="_blank" rel="noopener noreferrer">Ouvir Agora</a>
+      </div>
+      <div class="destaque-imagem">
+        <a href="${escapeHtml(randomAlbum.spotify || '#')}" target="_blank"><img src="${escapeHtml(randomAlbum.imagem || 'images/placeholder.png')}" alt="Capa Album ${escapeHtml(randomAlbum.titulo || '')}">
+      </div>
+    `;
+    destaque.appendChild(div);
+  } catch (erro) {
+    console.error('Erro em albumAleatorio:', erro);
+  }
+}
+
 
 // realiza a busca pelo input e renderiza os resultados
 function iniciarBusca() {
   const input = document.querySelector('.barra-de-pesquisa input');
   const texto = (input ? input.value.trim().toLowerCase() : '');//tratamento de dados do texto 
-
-  const welcome = document.querySelector('.welcome-section');
-  const destaque = document.querySelector('.destaque-semana');
-  const banners = document.querySelector('.grid-banners');
-  const container = document.querySelector('.card-container');
+  const nav_recomendacao = document.querySelector('.header-link');
 
   // se não há texto, mostra a intro e limpa resultados
   if (!texto) {
     if (welcome) welcome.style.display = '';
     if (banners) banners.style.display = '';
     if (destaque) destaque.style.display = '';
+    if (destaqueApresentacao) destaqueApresentacao.style.display = '';
+    if (nav_recomendacao) nav_recomendacao.style.display = 'inline-block';
     if (container) container.innerHTML = ''; // limpa área de resultados
     return;
   }
@@ -35,6 +70,8 @@ function iniciarBusca() {
   if (destaque) destaque.style.display = 'none';
   if (welcome) welcome.style.display = 'none';
   if (banners) banners.style.display = 'none';
+  if (nav_recomendacao) nav_recomendacao.style.display = 'none';
+  if (destaqueApresentacao) destaqueApresentacao.style.display = 'none';
 
   // filtra por título, banda, gênero ou ano
   const filtrados = albuns.filter(a => {
@@ -94,38 +131,6 @@ function escapeHtml(str) {
     .replace(/'/g, '&#039;');
 }
 
-// configuração inicial: limpa o input, mostra intro e carrega dados
-document.addEventListener('DOMContentLoaded', () => {
-  const input = document.querySelector('.barra-de-pesquisa input');
-  const botao = document.getElementById('botao-busca');
-  const welcome = document.querySelector('.welcome-section');
-  const banners = document.querySelector('.grid-banners');
-  const container = document.querySelector('.card-container');
-
-  // limpa campo de busca e evita autocomplete
-  if (input) {
-    input.value = '';
-    input.autocomplete = 'off';
-    input.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') iniciarBusca();
-    });
-  }
-
-  // botão dispara busca (se existir)
-  if (botao) botao.addEventListener('click', iniciarBusca);
-
-  // ao recarregar: mostra a intro e limpa resultados
-  if (welcome) welcome.style.display = '';
-  if (banners) banners.style.display = '';
-  if (container) container.innerHTML = ''; // limpa resultados anteriores
-
-  // carrega os dados (não renderiza tudo automaticamente)
-  carregarDados();
-});
-
-
-
-
 
 // Funções para os banners de genero musical
 function buscarGenero(genero) {
@@ -135,12 +140,36 @@ function buscarGenero(genero) {
 }
 
 
-
-
-
-
-
 // Função para recarregar a página ao clicar no logo
 function recarregarPagina() {
-    window.location.reload();
+  window.location.reload();
 }
+  // configuração inicial: limpa o input, mostra intro e carrega dados
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.querySelector('.barra-de-pesquisa input');
+    const botao = document.getElementById('botao-busca');
+    const welcome = document.querySelector('.welcome-section');
+    const banners = document.querySelector('.grid-banners');
+    const container = document.querySelector('.card-container');
+    
+    albumAleatorio();
+    // limpa campo de busca e evita autocomplete
+    if (input) {
+      input.value = '';
+      input.autocomplete = 'off';
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') iniciarBusca();
+      });
+    }
+  
+    // botão dispara busca (se existir)
+    if (botao) botao.addEventListener('click', iniciarBusca);
+  
+    // ao recarregar: mostra a intro e limpa resultados
+    if (welcome) welcome.style.display = '';
+    if (banners) banners.style.display = '';
+    if (container) container.innerHTML = ''; // limpa resultados anteriores
+  
+    // carrega os dados (não renderiza tudo automaticamente)
+    carregarDados();
+  });

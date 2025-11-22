@@ -17,6 +17,8 @@
         <img src="images/discoapp-logo.svg" alt="Disco APP Logo" class="logo"
         onclick="recarregarPagina()">
 
+        <a href="#destaque-semana" class="header-link" aria-label="Ir para recomendação">Recomendação</a>
+
         <div class="barra-de-pesquisa">
             <input type="text" placeholder="Busque por albuns, bandas ou anos..." aria-label="Buscar">
             <button id="botao-busca" onclick="iniciarBusca()" aria-label="Pesquisar">
@@ -70,9 +72,16 @@
                         alt="Pop">
                     <h3>Pop</h3>
                 </div>
+                <div class="card-banner" onclick="buscarGenero('Gospel')">
+                    <img src="https://images.unsplash.com/photo-1617142714053-54451f8a2097?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Gospel">
+                    <h3>Gospel</h3>
+                </div>
         </section>
 
-        <section class="destaque-semana">
+        <h4 class="apresentacao-destaque">👇Não sabe o que ouvir? Recarregue para receber uma recomendação agora!👇</h4>
+        <section id="destaque-semana" class="destaque-semana">
+            <!-- Cards serão inseridos aqui pelo JavaScript -->
             <div class="destaque-conteudo">
                 <div class="destaque-texto">
                     <span>Recomendação da Semana 🔥</span>
@@ -121,7 +130,7 @@
     <footer class="footer">
         <ul class="footer-links">
             <li>
-                <a href="https://github.com/Ita-lodotexe" target="_blank">Github</a>
+                <a href="https://github.com/Ita-lodotexe/DiscoApp" target="_blank">Github</a>
             </li>
             <li>
                 <a href="https://cursos.alura.com.br/imersoes" target="_blank">Alura</a>

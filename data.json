@@ -378,5 +378,185 @@
     "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/b9/78/fa/b978fac2-a626-ea2e-ea93-5f7e7bf642b4/8429006299409.jpg/600x600bb.jpg",
     "spotify": "https://open.spotify.com/intl-pt/album/6kjXPFw0BT3SdpWgHwjr32?si=b68216b059f649e7",
     "youtube": "https://www.youtube.com/results?search_query=Gigantes+BK"
+  },
+  {
+    "titulo": "Joio ou Trigo",
+    "banda": "Rodolfo Abrantes",
+    "ano": 2006,
+    "genero": "Rock Cristão, Gospel",
+    "descricao": "O primeiro álbum solo de Rodolfo Abrantes após deixar o Raimundos e se converter, marcando sua transição para o rock com letras de forte conteúdo espiritual e fé.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/5c/25/c4/5c25c45a-05c7-329d-667e-3e6dd60f369b/7898556749725.png/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/1UcrpfiJ2pio2pERsx5dcs?si=6692eb7cc4834f8a",
+    "youtube": "https://www.youtube.com/results?search_query=Rodolfo+Abrantes+Joio+ou+Trigo"
+  },
+  {
+    "titulo": "Jesus Is King",
+    "banda": "Kanye West",
+    "ano": 2019,
+    "genero": "Gospel Rap",
+    "descricao": "O nono álbum de estúdio de Kanye West, que marca uma dedicação explícita à fé cristã, afastando-se de temas seculares e focando em louvor e salvação. Vencedor do Grammy de Melhor Álbum Gospel Contemporâneo.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/21/fd/d3/21fdd3d4-0c00-53ef-3903-d0569c49a812/19UMGIM89397.rgb.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/0FgZKfoU2Br5sHOfvZKTI9?si=19d96f7fa7384667",
+    "youtube": "https://www.youtube.com/results?search_query=Kanye+West+Jesus+Is+King"
+  },
+  {
+    "titulo": "Além do Que os Olhos Podem Ver",
+    "banda": "Oficina G3",
+    "ano": 2005,
+    "genero": "Progressive Metal Cristão, Gospel",
+    "descricao": "Considerado um dos álbuns mais maduros e complexos da banda, explorando temas profundos e existenciais com arranjos progressivos e pesados. Vencedor do Grammy Latino de Melhor Álbum Cristão em Língua Portuguesa.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/ab/09/57/ab095729-c678-dbc5-3263-d237c422e1ff/Oficina_Alem_do_que_os_olhos.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/5gixMR2tl2rMH8RTknzUGX?si=d4df66d7a3bb468c",
+    "youtube": "https://www.youtube.com/results?search_query=Oficina+G3+Al%C3%A9m+do+Que+os+Olhos+Podem+Ver"
+  },
+  {
+    "titulo": "Santidade ao Senhor",
+    "banda": "Rodolfo Abrantes",
+    "ano": 2012,
+    "genero": "Hard Rock Cristão, Gospel",
+    "descricao": "Álbum que solidificou a carreira solo de Rodolfo no rock cristão, com faixas mais diretas e um som pesado que remete às suas raízes, mas focado exclusivamente na adoração.",
+    "imagem": "https://cdn-images.dzcdn.net/images/cover/114dcea02b9e2879606d7634be71ef1b/500x500-000000-80-0-0.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/track/76cXiPWRAH6ZnpUiHhyv9I?si=74bf6f2234ca462d",
+    "youtube": "https://www.youtube.com/results?search_query=Rodolfo+Abrantes+Santidade+ao+Senhor"
+  },
+  {
+    "titulo": "Awake",
+    "banda": "Skillet",
+    "ano": 2009,
+    "genero": "Christian Hard Rock, Gospel",
+    "descricao": "Um dos álbuns mais vendidos da história do rock cristão, com uma fusão poderosa de hard rock e elementos sinfônicos. Contém hits como 'Monster' e 'Hero'.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/10/24/e9/1024e9b5-f235-b639-86d2-4a9bb4a05d1b/mzi.khalgazq.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/0RySAmM6oDPGSE03X3dzi1?si=127c5f09f8b344b0",
+    "youtube": "https://www.youtube.com/results?search_query=Skillet+Awake"
+  },
+  {
+    "titulo": "Satellite",
+    "banda": "P.O.D.",
+    "ano": 2001,
+    "genero": "Nu Metal Cristão, Gospel",
+    "descricao": "Álbum que projetou o P.O.D. para o mainstream, misturando nu metal, reggae e hardcore, com letras espirituais e de esperança. Contém os sucessos 'Youth of the Nation' e 'Alive'.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8c/88/79/8c8879a9-0cae-1e38-42f1-4759373a163d/603497843145.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/4eUmncMYQRg0Ot29KKqbuk?si=eac4e234f3644485",
+    "youtube": "https://www.youtube.com/results?search_query=P.O.D.+Satellite"
+  },
+  {
+    "titulo": "Jesus Freak",
+    "banda": "DC Talk",
+    "ano": 1995,
+    "genero": "Christian Alternative Rock, Gospel",
+    "descricao": "Um álbum seminal que misturou rock alternativo e hip-hop, levando o rock cristão a um novo nível de aceitação popular e crítica. O título faz referência a como os cristãos eram vistos nos anos 70.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7e/e6/dd/7ee6ddc5-d00d-99ae-166d-c06ccbc1eebf/00094631157158.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/0yJ4Otts7q8pjacLdCUXJa?si=dd282fc5c122433c",
+    "youtube": "https://www.youtube.com/results?search_query=DC+Talk+Jesus+Freak"
+  },
+  {
+    "titulo": "To Hell with the Devil",
+    "banda": "Stryper",
+    "ano": 1986,
+    "genero": "Glam Metal Cristão, Gospel",
+    "descricao": "Um marco do metal cristão, caracterizado por letras abertamente evangélicas e o visual 'yellow and black attack' da banda. Foi o primeiro álbum cristão a ganhar disco de platina.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a1/f3/22/a1f322ca-58ff-dbc8-7556-12a12bb552b5/00720616118523.rgb.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/4LAVjeUmJl3h3U44sMRrfm?si=405122558041475e",
+    "youtube": "https://www.youtube.com/results?search_query=Stryper+To+Hell+with+the+Devil"
+  },
+  {
+    "titulo": "Sobre o Mesmo Chão",
+    "banda": "Palavrantiga",
+    "ano": 2012,
+    "genero": "Christian Indie Rock",
+    "descricao": "Com letras poéticas e arranjos minimalistas, este álbum cativou o público por sua profundidade lírica e sonoridade que mistura indie rock brasileiro com adoração.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/48/e5/6c/48e56c6d-52ac-378f-daa9-a07755a48ac7/7891430262426.png/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/2tMUc8lFjT4my8aI3wC7uu?si=b55b056324914a2f",
+    "youtube": "https://www.youtube.com/results?search_query=Palavrantiga+Sobre+o+Mesmo+Ch%C3%A3o"
+  },
+  {
+    "titulo": "Beyond Belief",
+    "banda": "Petra",
+    "ano": 1990,
+    "genero": "AOR/Christian Rock, Gospel",
+    "descricao": "Considerado um dos álbuns mais importantes da banda Petra, que dominou o cenário do rock cristão na virada dos anos 80 para os 90 com hinos de estádio e produção impecável.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/19/fa/f7/19faf7fb-cf5b-7c42-59f1-af8cd67f7221/080688934668.png/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/1ssGLn8MxlaOnOoB2c47yl?si=626ecb65cb10485f",
+    "youtube": "https://www.youtube.com/results?search_query=Petra+Beyond+Belief"
+  },
+  {
+    "titulo": "Empires",
+    "banda": "Hillsong United",
+    "ano": 2015,
+    "genero": "Worship Pop",
+    "descricao": "Álbum que mistura elementos de pop moderno e eletrônica com letras de adoração, explorando a tensão entre o mundo temporal ('empires') e a eternidade. Um marco no movimento moderno de louvor.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/d1/76/f5d17681-a7db-99a1-219d-b59cc8d6021c/9320428303592.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/album/42m8CjJv1Ww82m29mE3Q4K",
+    "youtube": "https://www.youtube.com/results?search_query=Hillsong+United+Empires"
+  },
+  {
+    "titulo": "Restauração",
+    "banda": "Renascer Praise",
+    "ano": 1997,
+    "genero": "Gospel/Pop",
+    "descricao": "Um dos álbuns mais aclamados do grupo Renascer Praise, conhecido por seu coro potente e produção grandiosa, definindo o som do gospel brasileiro dos anos 90.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/be/de/27/bede275b-5d57-5391-d80b-68bfedb96270/190296465352.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/3m2rIiUMcZurdEZv2Nzfqu?si=4a3f2d4504a74598",
+    "youtube": "https://www.youtube.com/results?search_query=Renascer+Praise+Restaura%C3%A7%C3%A3o"
+  },
+  {
+    "titulo": "O Milagre Sou Eu",
+    "banda": "Eyshila",
+    "ano": 2008,
+    "genero": "Pop Gospel",
+    "descricao": "Álbum que traz a cantora Eyshila em seu auge vocal e de composição, com canções de testemunho e superação que se tornaram hinos nas igrejas brasileiras.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/38/f4/2f/38f42ff4-c781-26a3-be2f-d37c20588f54/0.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/7g8BLM7W9A6uzvapx0IcjF?si=c56f32b624d64ef9",
+    "youtube": "https://www.youtube.com/results?search_query=Eyshila+O+Milagre+Sou+Eu"
+  },
+  {
+    "titulo": "Reino de Justiça",
+    "banda": "Nívea Soares",
+    "ano": 2011,
+    "genero": "Worship",
+    "descricao": "Um álbum focado em louvor e adoração profética, capturando a energia de Nívea Soares em um trabalho que se tornou referência para ministérios de música no Brasil.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/84/1d/e3/841de31d-1c07-7939-1bc8-581d2c8c147b/3614598036005.png/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/1w3UofqYh0InFfUymfhLCi?si=6dee189ad15a4f9c",
+    "youtube": "https://www.youtube.com/results?search_query=N%C3%ADvea+Soares+Reino+de+Justi%C3%A7a"
+  },
+  {
+    "titulo": "Take Me to Your Leader",
+    "banda": "Newsboys",
+    "ano": 1996,
+    "genero": "Christian Pop Rock",
+    "descricao": "Um álbum que utiliza ironia e pop rock cativante para questionar a cultura secular e promover a fé cristã de maneira divertida e acessível.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/86/bf/17/86bf17b0-def1-8358-cf3a-879870136188/00724382007555.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/72Sx2clAuxuyeOyHbqZBur?si=c29ff71061184138",
+    "youtube": "https://www.youtube.com/results?search_query=Newsboys+Take+Me+to+Your+Leader"
+  },
+  {
+    "titulo": "IV",
+    "banda": "Led Zeppelin",
+    "ano": 1971,
+    "genero": "Hard Rock / Folk Rock",
+    "descricao": "Formalmente sem título, este álbum é um dos mais vendidos da história, apresentando a mistura definitiva de hard rock, misticismo e influências folk, incluindo a épica 'Stairway to Heaven'.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5c/15/9b/5c159b27-95ca-b9a7-84e3-28e795fffd39/dj.kvkrpptq.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/5EyIDBAqhnlkAHqvPRwdbX?si=a7ee1714252740f6",
+    "youtube": "https://www.youtube.com/results?search_query=Led+Zeppelin+IV"
+  },
+  {
+    "titulo": "Map of the Soul: 7",
+    "banda": "BTS",
+    "ano": 2020,
+    "genero": "K-Pop",
+    "descricao": "Um dos álbuns mais complexos e ambiciosos do grupo sul-coreano, explorando a psicologia Junguiana e a jornada de sete anos da banda, misturando pop, hip-hop e R&B.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bd/68/9b/bd689bf2-ef25-4973-7ecd-7eb4965019c5/195081034713_Cover.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/5W1XY5ucNATjTULERvXx9j?si=ea5d5e1c8c3e472a",
+    "youtube": "https://www.youtube.com/results?search_query=BTS+Map+of+the+Soul%3A+7"
+  },
+  {
+    "titulo": "When We All Fall Asleep, Where Do We Go?",
+    "banda": "Billie Eilish",
+    "ano": 2019,
+    "genero": "Pop / Art Pop",
+    "descricao": "O álbum de estreia inovador que redefiniu o pop moderno, caracterizado por sons minimalistas, graves pesados e letras sombrias, sendo um sucesso estrondoso de crítica e público.",
+    "imagem": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1a/37/d1/1a37d1b1-8508-54f2-f541-bf4e437dda76/19UMGIM05028.rgb.jpg/600x600bb.jpg",
+    "spotify": "https://open.spotify.com/intl-pt/album/0S0KGZnfBGSIssfF54WSJh?si=bb78cbae8f654e3e",
+    "youtube": "https://www.youtube.com/results?search_query=Billie+Eilish+When+We+All+Fall+Asleep%2C+Where+Do+We+Go%3F"
   }
 ]
