@@ -43,9 +43,6 @@ header {
   gap: 1rem;
 }
 
-/* evita que a seção fique escondida pelo header fixo */
-#destaque-semana { scroll-margin-top: 4.5rem; }
-
 /* link textual no header, discreto e consistente com a paleta */
 .header-link {
   color: var(--secondary-color);
@@ -128,6 +125,10 @@ header {
   transform: scale(0.98); /* Efeito de clique (diminui o tamanho) */
 }
 
+
+
+
+
 /* ESTILIZAÇÃO DO MAIN*/
 main {
   flex: 1;
@@ -159,6 +160,10 @@ main {
   margin-left: 2rem;
   fill: var(--primary-color);
 }
+
+
+
+
 
 /* ESTILIZAÇÃO DOS BANNERS */
 .grid-banners {
@@ -213,6 +218,10 @@ main {
   background-color: rgba(255, 200, 0, 0);
 }
 
+
+
+
+
 /* ESTILIZAÇÃO DOS CARDS */
 .card-container {
   width: 100%;
@@ -229,7 +238,6 @@ main {
   padding: 1.5rem 0; /* só padding vertical, horizontal já vem do main */
 }
 
-/* visual "quadrado, arredondado e fofo" para os cards */
 .card-album {
   width: 100%;
   max-width: 600px; /* controla o tamanho máximo do card */
@@ -249,7 +257,6 @@ main {
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
-/* imagem quadrada dentro do card */
 .card-album img {
   width: 100%;
   max-width: 100%;
@@ -291,12 +298,9 @@ main {
   scrollbar-width: thin;                         /* Firefox */
   scrollbar-color: rgba(255,255,255,0.12) transparent;
 }
-
 .album-descricao:hover {
   box-shadow: inset 0 -28px 28px -18px rgba(0,0,0,0.12);
 }
-
-/* WebKit scrollbar (Chrome, Edge, Safari) */
 .album-descricao::-webkit-scrollbar {
   width: 8px;
 }
@@ -320,8 +324,6 @@ main {
   justify-content: center;
   margin-top: 0.5rem;
 }
-
-/* interações suaves */
 .card-album:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(96, 81, 74, 0.14);
@@ -332,6 +334,7 @@ main {
   justify-content: center;
   gap: 1rem;
 }
+
 .icon-brand {
   color: var(--brand-color-1);
   width: 20px;
@@ -343,30 +346,12 @@ main {
   scale: 1.2;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
-/* responsividade: 2 colunas / 1 coluna */
-@media (max-width: 900px) {
-  .card-container {
-    grid-template-columns: repeat(2, minmax(180px, 1fr));
-  }
-  .card-album {
-    width: 100%;
-    max-width: 260px;
-  }
-}
-@media (max-width: 480px) {
-  .card-container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .card-album {
-    width: 100%;
-    max-width: none;
-    padding: 0.9rem;
-  }
-}
 
 
 
+
+
+/* ESTILIZAÇÃO DA SEÇÃO DE RECOMENDAÇÃO ALEATÓRIA */
 .apresentacao-destaque{
   text-align: center;
   font-size: 1rem;
@@ -386,6 +371,19 @@ main {
   display: flex;
   align-items: center; /* Alinha verticalmente */
   gap: 3rem;
+}
+.destaque-conteudo .material-symbols-outlined{
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-top: -30%;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: #1a1a1a;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.destaque-conteudo .material-symbols-outlined:hover{
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Brilho sutil */;
+  transform: rotate(30deg);
 }
 
 .destaque-imagem img {
@@ -410,7 +408,7 @@ main {
   padding: 0.65rem 1rem;
   border-radius: 999px;
   background: linear-gradient(90deg, #ffc800 0%, #be6600 100%);
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
@@ -418,11 +416,6 @@ main {
   cursor: pointer;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
   transition: transform 160ms ease, box-shadow 160ms ease, filter 120ms ease;
-}
-
-/* posicionamento leve e destaque dentro do bloco de texto */
-.destaque-texto .btn-destaque {
-  margin-top: 0.8rem;
 }
 
 /* estados */
@@ -440,21 +433,16 @@ main {
   border-radius: 999px;
 }
 
-/* responsivo: reduz o padding em telas pequenas */
-@media (max-width: 480px) {
-  .btn-destaque {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.9rem;
-  }
-}
-/* Celular: Imagem em cima, texto embaixo */
-@media (max-width: 768px) {
-  .destaque-conteudo {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
+/* posicionamento leve e destaque dentro do bloco de texto */
+.destaque-texto .btn-destaque {
+  margin-top: 0.8rem;
 }
 
+
+
+
+
+/* ESTILIZAÇÃO PARA O FOOTER DA PÁGINA */
 .footer {
   position: static;
   width: 100%;
@@ -482,90 +470,188 @@ main {
   text-decoration: none; /* Remove o sublinhado */
   transition: color 0.2s; /* Transição suave para a cor */
 }
-
 .footer-links a:hover {
-  color: var(
-    --accent-color
-  ); /* Muda a cor do link ao passar o mouse (variável não definida) */
+  color: var(--secondary-color);
 }
+
+
+
+
+
+/* ESTILIZAÇÃO RESPONSIVA */
+/* ==========================================================================
+   RESPONSIVIDADE (Copie e cole no final do arquivo CSS)
+   ========================================================================== */
 
 @media (max-width: 768px) {
+
+  /* --- 1. HEADER (Layout App: Logo + Botão em cima, Busca embaixo) --- */
   header {
-    /* Estilos para telas com largura máxima de 768px */
-    flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
-    padding: 1rem; /* Reduz o espaçamento interno */
+    height: auto; /* Altura flexível */
+    flex-wrap: wrap; /* Permite quebrar linha */
+    padding: 1rem;
+    gap: 0.8rem;
+    align-items: center;
   }
 
-  header h1 {
-    /* Estilos para o h1 no cabeçalho em telas menores */
-    text-align: center; /* Centraliza o texto */
-    margin-bottom: 1rem; /* Adiciona margem inferior */
+  /* Logo menor e alinhada */
+  .logo {
+    height: 2.5rem; /* Tamanho bom para mobile */
+    transform: none;
+    padding-left: 0;
+    width: auto;
+    flex: 0 0 auto;
   }
 
-  div input {
-    /* Estilos para o input em telas menores */
-    width: 90vw; /* Largura baseada na largura da viewport */
-    font-size: 1.2rem; /* Reduz o tamanho da fonte */
-  }
-
-  main {
-    /* Estilos para o main em telas menores */
-    padding: 0 1rem; /* Adiciona espaçamento lateral */
-  }
-
-  article:hover {
-    /* Estilos para o article em telas menores */
-    transform: none; /* Remove o efeito de escala ao passar o mouse */
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    /* Estilos para o h1 em telas com largura máxima de 480px */
-    font-size: 1rem; /* Reduz ainda mais o tamanho da fonte */
-    max-width: 70%; /* Define uma largura máxima */
-    word-wrap: break-word; /* Permite a quebra de palavras longas */
-  }
-
-  div input, /* Estilos para o input e seu placeholder em telas muito pequenas */
-    div input::placeholder {
-    font-size: 1rem; /* Reduz o tamanho da fonte */
-  }
-
-  article h2 {
-    /* Estilos para o h2 do article em telas muito pequenas */
-    font-size: 1.3rem; /* Reduz o tamanho da fonte */
-  }
-
-  div {
-    /* Estilos para a div do cabeçalho em telas muito pequenas */
-    display: flex; /* Habilita flexbox */
-    align-items: center; /* Alinha itens ao centro */
-    justify-content: center; /* Centraliza itens */
-    flex-direction: column; /* Organiza em coluna */
-    gap: 0.5rem; /* Espaçamento entre os itens */
-  }
-
-  .footer {
-    /* Estilos para o rodapé em telas muito pequenas */
-    display: none; /* Oculta o rodapé */
-  }
-
-  button {
-    /* Estilos para o botão em telas muito pequenas */
-    margin-top: 1rem; /* Adiciona margem no topo */
-  }
-}
-
-@media (max-width: 480px) {
-  .card-album {
-    width: 140px;
-    padding: 0.75rem;
-  }
-  .card-album h2 {
-    font-size: 0.95rem;
-  }
-  .card-album p {
+  /* Transformando o Link em um Botão Bonito "Cápsula" */
+  .header-link {
+    display: inline-block;
+    background-color: var(--brand-color-2); /* Cor de destaque */
+    color: var(--bg-color);
     font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px; /* Formato pílula */
+    margin-right: 0;
+    margin-left: auto; /* Empurra para a direita total */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    white-space: nowrap;
+  }
+
+  /* Barra de pesquisa ocupa 100% da linha de baixo */
+  .barra-de-pesquisa {
+    width: 100%;
+    max-width: none;
+    order: 3; /* Força ela a ser o último elemento (linha de baixo) */
+    margin-top: 5px;
+  }
+
+  /* --- 2. SEÇÃO DE BOAS-VINDAS --- */
+  main {
+    padding: 0 1rem;
+  }
+
+  .welcome-section {
+    flex-direction: column-reverse; /* SVG em cima, texto embaixo */
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .welcome-text {
+    width: 100%;
+    font-size: 0.95rem;
+    text-align: center; /* Centraliza texto de boas vindas */
+  }
+
+  .welcome-section svg {
+    width: 50%;
+    margin: 0;
+  }
+
+  /* --- 3. BANNERS (Um embaixo do outro + Achatados) --- */
+  .grid-banners {
+    grid-template-columns: 1fr; /* 1 Coluna */
+    gap: 12px;
+    padding: 10px 0;
+  }
+
+  .card-banner {
+    height: 90px; /* Bem achatado para economizar tela */
+    border-radius: 12px;
+  }
+
+  .card-banner h3 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Ajuste no hover mobile (remove efeito de crescer que atrapalha touch) */
+  .card-banner:hover {
+    transform: none;
+  }
+
+  /* --- 4. CARDS DE RESULTADO (2 Colunas + Legível) --- */
+  .card-container {
+    grid-template-columns: 1fr 1fr; /* 2 Colunas */
+    gap: 10px;
+  }
+
+  .card-album {
+    padding: 0.8rem 0.5rem;
+    border-radius: 10px;
+    max-height: none; /* Remove altura máxima para caber conteúdo */
+  }
+
+  .card-album h2 {
+    font-size: 0.85rem; /* Título menor */
+    min-height: 2.5em; /* Altura mínima para alinhar títulos de 2 linhas */
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Corta texto muito longo */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-album h4 {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+  }
+
+  .card-album p, .album-ano, .album-genero {
+    font-size: 0.7rem;
+    text-align: center; /* Centraliza detalhes */
+  }
+
+  /* ESCONDER A DESCRIÇÃO NO MOBILE (Crucial para layout de 2 colunas funcionar) */
+  .album-descricao {
+    display: none; 
+  }
+
+  /* Ajuste dos botões de link */
+  .card-links {
+    margin-top: auto; /* Empurra botões para o final do card */
+    gap: 0.5rem;
+  }
+  
+  .icon-brand {
+    width: 18px; /* Ícones menores */
+  }
+
+  /* --- 5. DESTAQUE DA SEMANA (Refresh no canto) --- */
+  .destaque-semana {
+    padding: 3rem 1.5rem;
+    margin-top: 2rem;
+    position: relative; /* Pai relativo */
+    text-align: center;
+  }
+
+  .destaque-conteudo {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .destaque-imagem img {
+    width: 180px; /* Capa menor */
+    transform: none;
+  }
+
+  /* Ícone de Refresh Absoluto no Canto */
+  .destaque-conteudo .material-symbols-outlined {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    margin: 0;
+    font-size: 2rem;
+    background: #1a1a1a;
+    z-index: 10;
+    border: none;
+  }
+
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
 }

@@ -32,6 +32,9 @@ async function albumAleatorio(){
     const div = document.createElement('div');
     div.className = 'destaque-conteudo';
     div.innerHTML = `
+      <span class="material-symbols-outlined" onclick="recarregarPagina()">
+        refresh
+      </span>  
       <div class="destaque-texto">
         <span>Recomendação da vez 🔥</span>
         <h2>${escapeHtml(randomAlbum.titulo || '')} - ${escapeHtml(randomAlbum.banda || randomAlbum.artista || '')}</h2>
