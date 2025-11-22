@@ -16,8 +16,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=Imersão+Dev&message=Alura&color=6c63ff&style=for-the-badge&logo=alura"/>
-  <img src="https://img.shields.io/static/v1?label=Status&message=Concluído&color=2ecc71&style=for-the-badge"/>
+  <img src="https://img.shields.io/static/v1?label=Imersão+Dev&message=Alura&color=6c63ff&style=for-the-badge&logo=alura" alt="Badge Imersão Dev Alura" />
+  <img src="https://img.shields.io/static/v1?label=Status&message=Concluído&color=2ecc71&style=for-the-badge" alt="Badge Status Concluído" />
 </p>
 
 ---
