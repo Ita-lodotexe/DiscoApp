@@ -588,7 +588,7 @@ main {
     min-height: 2.5em; /* Altura mínima para alinhar títulos de 2 linhas */
     margin-bottom: 5px;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Corta texto muito longo */
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
